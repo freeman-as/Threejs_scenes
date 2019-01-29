@@ -1,0 +1,23 @@
+{
+  "name": "Threejs_scenes",
+  "version": "1.0.0",
+  "description": "- 001_first_scene\r   hoghoge\r -",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-as/Threejs_scenes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeman-as/Threejs_scenes/issues"
+  },
+  "homepage": "https://github.com/freeman-as/Threejs_scenes#readme",
+  "devDependencies": {
+    "three": "^0.100.0"
+  }
+}
