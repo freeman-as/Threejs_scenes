@@ -62,9 +62,5 @@ function init() {
     document.getElementById("WebGL-output").appendChild(renderer.domElement);
 
     renderer.render(scene, camera);
-
-    function renderScene() {
-        
-    }
 }
 window.onload = init;
