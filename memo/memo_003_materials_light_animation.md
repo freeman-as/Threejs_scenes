@@ -30,7 +30,7 @@
 
 ### 参考
 
-- **stats.js**
+- **``stats.js``**
   フレームレート（1秒ごとのフレーム数）に関する情報を表示できるヘルパーライブラリ
   https://github.com/mrdoob/stats.js
 - 

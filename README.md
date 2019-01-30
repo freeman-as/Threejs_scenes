@@ -14,3 +14,6 @@
 
   requestAnimationFrameによるアニメーション
 
+- 004_control_gui
+
+  dat.GUIインターフェイス
