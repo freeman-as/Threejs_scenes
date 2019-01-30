@@ -3,6 +3,12 @@
 ## SCENE LIST
 
 - 001_first_scene
-  hoghoge
+
+  スタンダードなシーン
+
+- 002_materials_light
+
+  スポットライトあり
+
 - 
 
