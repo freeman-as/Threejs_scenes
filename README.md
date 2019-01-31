@@ -30,4 +30,6 @@
 
   シーンにフォグ効果を適用
 
-- 
+- 008_forced_materials
+
+  シーンにOverrideMaterailを適用
