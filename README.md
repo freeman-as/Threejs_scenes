@@ -17,3 +17,7 @@
 - 004_control_gui
 
   dat.GUIインターフェイス
+
+- 005_screen_size_change
+
+  ブラウザサイズの変更によるシーンの自動リサイズ
