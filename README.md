@@ -33,3 +33,9 @@
 - 008_forced_materials
 
   シーンにOverrideMaterailを適用
+
+- 009_geometries
+
+  標準のジオメトリ群表示
+
+- 
