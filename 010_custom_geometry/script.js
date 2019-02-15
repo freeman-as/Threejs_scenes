@@ -95,19 +95,25 @@ function init() {
         return controls;
     }
 
+    // console.log(addControl(1, 1, 1));
+
     const controlPoints = [];
-    controlPoints.push(addControl(3, 5, 3));
-    controlPoints.push(addControl(3, 5, 0));
-    controlPoints.push(addControl(3, 0, 3));
-    controlPoints.push(addControl(3, 0, 0));
-    controlPoints.push(addControl(0, 5, 0));
-    controlPoints.push(addControl(0, 5, 3));
-    controlPoints.push(addControl(0, 0, 0));
-    controlPoints.push(addControl(0, 0, 3));
+    vertices.forEach(v => {
+        controlPoints.push(addControl(v.x, v.y, v.z));
+    });
+    // console.log(controlPoints)
+    // controlPoints.push(addControl(1, 3, 1));
+    // controlPoints.push(addControl(1, 3, -1));
+    // controlPoints.push(addControl(1, -1, 1));
+    // controlPoints.push(addControl(1, -1, -1));
+    // controlPoints.push(addControl(-1, 3, -1));
+    // controlPoints.push(addControl(-1, 3, 1));
+    // controlPoints.push(addControl(-1, -1, -1));
+    // controlPoints.push(addControl(-1, -1, 1));
 
     const gui = new dat.GUI();
     gui.add(new function () {
-        this.clone = function () {
+        this.clone = ( _ => {
             const cloneGeometry = mesh.children[0].geometry.clone();
             const materials = [
                 new THREE.MeshLambertMaterial({
@@ -121,12 +127,15 @@ function init() {
             const mesh2 = THREE.SceneUtils.createMultiMaterialObject(cloneGeometry, materials);
             mesh2.children.forEach((e) => e.castShadow = true);
 
+            // THREE.Group内で、複数メッシュが内部的に作られてるか確認用
+            // console.dir(mesh2);
+
             mesh2.translateX(5);
             mesh2.translateZ(5);
             mesh2.name = 'clone';
             scene.remove(scene.getObjectByName('clone'));
             scene.add(mesh2);
-        }
+        })
     }, 'clone');
 
     for (let i = 0; i < vertices.length; i++) {
@@ -142,13 +151,16 @@ function init() {
 
         mesh.children.forEach((e) => {
             for (let i = 0; i < vertices.length; i++) {
+                // 頂点座標を再設定
                 e.geometry.vertices[i].set(
                     controlPoints[i].x,
                     controlPoints[i].y,
                     controlPoints[i].z
                 );
             }
+            // ジオメトリに頂点を更新するよう通知
             e.geometry.verticesNeedUpdate = true;
+            // 面の法線を再計算
             e.geometry.computeFaceNormals();
         });
 
