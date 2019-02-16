@@ -45,3 +45,7 @@
 - 011_mesh_properties
 
   メッシュオブジェクト詳細
+
+- 012_both_cameras
+
+  カメラの平行投影と透視投影
