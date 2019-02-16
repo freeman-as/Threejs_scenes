@@ -54,5 +54,7 @@
 
   カメラの視点を特定の点へ制御
 
-- 
+- 014_ambient_light
+
+  ``THREE.AmbientLight``適用シーン
 
