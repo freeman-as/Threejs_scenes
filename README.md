@@ -62,5 +62,7 @@
 
   ``THREE.PointLight``適用シーン
 
-- 
+- 016_spot_light
+
+  ``THREE.SpotLight``適用シーン
 
