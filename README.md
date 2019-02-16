@@ -58,3 +58,9 @@
 
   ``THREE.AmbientLight``適用シーン
 
+- 015_point_light
+
+  ``THREE.PointLight``適用シーン
+
+- 
+
