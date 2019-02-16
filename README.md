@@ -66,3 +66,11 @@
 
   ``THREE.SpotLight``適用シーン
 
+- 017_directional_light
+
+  ``THREE.DirectionalLight``適用シーン
+
+- 018_hemisphere_light
+
+  ``THREE.HemisphereLight``適用シーン
+
