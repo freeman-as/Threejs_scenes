@@ -81,3 +81,7 @@
 - 020_basic_mesh_material
 
   ``THREE.Material``の基本機能
+
+- 021_depth_material
+
+  ``THREE.MeshDepthMaterial``適用シーン
