@@ -106,3 +106,7 @@
 
   ``THREE.MeshStandardMaterial``を適用シーン
 
+- 028_shader_material
+
+  ``THREE.ShaderMaterial``による独自シェーダー適用シーン
+
