@@ -1,2 +1,4 @@
 node_modules/**/*
 000_basic_skelton/
+libs/three.js
+libs/three.js-master
