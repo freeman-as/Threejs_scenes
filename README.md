@@ -82,6 +82,6 @@
 
   ``THREE.Material``の基本機能
 
-- 021_depth_material
+- 022_combined_material
 
-  ``THREE.MeshDepthMaterial``適用シーン
+  ``THREE.MeshDepthMaterial``を複数マテリアルに適用
