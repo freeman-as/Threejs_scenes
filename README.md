@@ -101,3 +101,8 @@
 - 026_mesh_phong_material
 
   ``THREE.MeshPhongMaterial``を適用シーン
+
+- 027_mesh_standard_material
+
+  ``THREE.MeshStandardMaterial``を適用シーン
+
