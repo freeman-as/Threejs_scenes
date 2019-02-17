@@ -93,3 +93,9 @@
 - 024_multi_material
 
   materialの配列で各面ごとに違うマテリアルを適用
+
+- 025_mesh_lambert_material
+
+  ``THREE.MeshLambertMaterial``を適用シーン
+
+- 
