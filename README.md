@@ -98,4 +98,6 @@
 
   ``THREE.MeshLambertMaterial``を適用シーン
 
-- 
+- 026_mesh_phong_material
+
+  ``THREE.MeshPhongMaterial``を適用シーン
