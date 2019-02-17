@@ -85,3 +85,7 @@
 - 022_combined_material
 
   ``THREE.MeshDepthMaterial``を複数マテリアルに適用
+
+- 023_mesh_normal_material
+
+  法線に基づくメッシュカラー
