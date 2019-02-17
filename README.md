@@ -89,3 +89,7 @@
 - 023_mesh_normal_material
 
   法線に基づくメッシュカラー
+
+- 024_multi_material
+
+  materialの配列で各面ごとに違うマテリアルを適用
