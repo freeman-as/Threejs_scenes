@@ -11,7 +11,7 @@
 
   ```javascript
   // constructor
-  MeshStandardMaterial( parameters : Object )
+  ShaderdMaterial( parameters : Object )
   // [property](一部)
   // - metalness: マテリアルがどの程度金属っぽいか。木や石などの非金属材料は0.0を使用し、金属使用は1.0を使用し、間には何もない（通常）。デフォルトは0.5
   // - metalnessMap: このテクスチャの青いチャンネルは、素材の金属性を変えるために使用
