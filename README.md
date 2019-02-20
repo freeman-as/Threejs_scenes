@@ -110,3 +110,7 @@
 
   ``THREE.ShaderMaterial``による独自シェーダー適用シーン
 
+- 029_line_material
+
+  ``THREE.LineBasicMaterial``を適用シーン
+
