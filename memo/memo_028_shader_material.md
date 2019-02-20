@@ -6,17 +6,21 @@
 ### 使用したThree.jsのAPIについて(抜粋)
 
 - **``ShaderdMaterial``**
-  Metallic-Roughnessワークフローを使用した、標準的な物理ベースのマテリアル
-  https://threejs.org/docs/#api/en/materials/MeshStandardMaterial
+  カスタムシェーダでレンダリングされたマテリアル。シェーダは、GLSLで書かれたGPU上で動作する小さなプログラムです。必要に応じて、カスタムシェーダを使用可能
+  https://threejs.org/docs/#api/en/materials/ShaderMaterial
 
   ```javascript
   // constructor
-  MeshStandardMaterial( parameters : Object )
-  // [property](一部)
-  // - metalness: マテリアルがどの程度金属っぽいか。木や石などの非金属材料は0.0を使用し、金属使用は1.0を使用し、間には何もない（通常）。デフォルトは0.5
-  // - metalnessMap: このテクスチャの青いチャンネルは、素材の金属性を変えるために使用
-  // - roughness: マテリアルがどれくらい粗いかを表す。 0.0は滑らかな鏡面反射、1.0は完全拡散を意味し、デフォルトは0.5。ラフネスマップも指定されている場合は、両方の値が乗算される
-  // - roughnessMap: このテクスチャの緑色のチャンネルは、素材の粗さを変えるために使用
+  ShaderMaterial( parameters : Object )
+  // code example
+  const material = new THREE.ShaderMaterial( {
+  	uniforms: {
+  		time: { value: 1.0 },
+  		resolution: { value: new THREE.Vector2() }
+  	},
+  	vertexShader: document.getElementById( 'vertexShader' ).textContent,
+  	fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+  } );
   ```
 
 
@@ -27,16 +31,50 @@
 ### メモ
 
 - **``THREE.ShaderdMaterial``**
-  簡易的な物理ベースレンダリング(Physically based rendering : PBR)を実現するマテリアル
-  オブジェクトの質感をより物理現象に則した形で実現しようとする
-- **``metalness``**
-  金属性。この値で光をどの程度どのような色で反射するか決まる
-- **``metalnessMap``**
-  ``metalness``をより細かく指定するためのテクスチャ
-- **``roughness``**
-  表面の粗さ。光沢の度合いを指定
-- **``roughnessMap``**
-  ``roughness``をより細かく指定するためのテクスチャ
+  WebGLコンテキストで直接実行される独自シェーダーを設定可能
+  独自シェーダーを使用することで、オブジェクトの描画方法やThreejsのデフォルトの表示を上書きする方法を厳密に指定できる
+  その他のマテリアルと同じプロパティも設定可能、それに加えて特殊なプロパティを渡すことができる
+
+- **``fragmentShader``**
+  ピクセルの色を設定。フラグメントシェーダープログラムを文字列で渡す
+
+  ```
+  特定のフラグメントについて表示すべき色を返す
+  ```
+
+- **``vertexShader``**
+  頂点の位置を変更。頂点シェーダープログラムを文字列として渡す
+
+  ```
+  このシェーダーを利用することで、頂点の位置を変更してジオメトリを変形させることができる
+  ```
+
+- **``uniforms``**
+  頂点シェーダーとフラグメントシェーダーの両方に同じ情報を送る
+
+  ```
+  JavaScriptレンダラーからシェーダーに情報を渡すために使用する変数
+  描画ループ内で値を更新してアニメーションさせる
+  ```
+
+- **``defines``**
+  シェーダープログラムにグローバル変数を追加できる
+
+- **``attributes``**
+  頂点シェーダーとフラグメントシェーダーの呼び出しごとに異なる値を設定。通常は位置や法線に関係するデータを渡すために使用。このプロパティがなければ、呼び出しごとにジオメトリのすべての頂点を渡すことになる
+
+- **``lights``**
+  ライトのデータをシェーダーに渡すかどうかを指定。デフォルト値はfalse
+
+- **``gl_Position``**
+  シェーダーの中で使用される特殊な変数で、代入した値が最終的な**座標**として返される
+
+- **``position``**
+  シェーダーの中で各頂点の座標を受け取る変数
+
+- **``gl_FragColor``**
+  シェーダーの中で使用される特殊な変数で、代入した値が最終的な**色**として返される
+
 - 
 
 ------

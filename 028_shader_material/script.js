@@ -53,7 +53,8 @@ function init() {
         stats.update();
 
         step += 0.01;
-        cube.rotation.set(step, step, step);
+        // cube.rotation.set(step, step, step);
+        cube.rotation.set(0, step, 0);
 
         cube.material.forEach(function(e) {
             e.uniforms.time.value += 0.01;
@@ -78,6 +79,7 @@ function init() {
         return stats;
     }
 
+    // shaderマテリアル作成用のヘルパー関数
     function createMaterial(vertexShader, fragmentShader) {
         const vertShader = document.getElementById(vertexShader).textContent;
         const fragShader = document.getElementById(fragmentShader).textContent;
