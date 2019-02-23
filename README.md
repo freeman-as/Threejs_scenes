@@ -154,6 +154,20 @@
 
   ``THREE.ConeGeometry``のシーン表示とプロパティ操作
 
+- 039_basic_3d_geometries_torus
+
+  ``THREE.TorusGeometry``のシーン表示とプロパティ操作
+
+- 040_basic_3d_geometries_torus_knot
+
+  ``THREE.TorusKnotGeometry``のシーン表示とプロパティ操作
+
+- 041_basic_3d_geometries_polyhedron
+
+  ``THREE.PolyhedronGeometry``のシーン表示とプロパティ操作
+
+
+
 
 
 
