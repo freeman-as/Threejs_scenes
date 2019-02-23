@@ -118,3 +118,43 @@
 
   ``THREE.LineDashedMaterial``を適用シーン
 
+- 031_basic_2d_geometries_plane
+
+  ``THREE.PlaneGeometry``のシーン表示とプロパティ操作
+
+- 032_basic_2d_geometries_circle
+
+  ``THREE.CircleGeometry``のシーン表示とプロパティ操作
+
+- 033_basic_2d_geometries_ring
+
+  ``THREE.RingGeometry``のシーン表示とプロパティ操作
+
+- 034_basic_2d_geometries_shape
+
+  ``THREE.ShapeGeometry``のシーン表示とプロパティ操作
+
+- 035_basic_3d_geometries_cube
+
+  ``THREE.BoxGeometry``のシーン表示とプロパティ操作
+
+- 035_basic_3d_geometries_cube
+
+  ``THREE.BoxGeometry``のシーン表示とプロパティ操作
+
+- 036_basic_3d_geometries_sphere
+
+  ``THREE.SphereGeometry``のシーン表示とプロパティ操作
+
+- 037_basic_3d_geometries_cylinder
+
+  ``THREE.CylinderGeometry``のシーン表示とプロパティ操作
+
+- 038_basic_3d_geometries_cone
+
+  ``THREE.ConeGeometry``のシーン表示とプロパティ操作
+
+
+
+
+
