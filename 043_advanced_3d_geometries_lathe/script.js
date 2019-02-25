@@ -46,9 +46,9 @@ function init() {
         stats.update();
 
 
-        spGroup.rotation.y = step;
+        spGroup.rotation.x = step;
         step += 0.01;
-        latheMesh.rotation.y = step;
+        latheMesh.rotation.x = step;
 
         requestAnimationFrame(renderScene);
         webGLRenderer.render(scene, camera);
