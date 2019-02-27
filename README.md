@@ -166,8 +166,19 @@
 
   ``THREE.PolyhedronGeometry``のシーン表示とプロパティ操作
 
+- 042_advanced_3d_geometrie_convex
 
+  ``THREE.ConvexGeometry``のシーン表示とプロパティ操作
 
+- 043_advanced_3d_geometries_lathe
+
+  ``THREE.LatheGeometry``のシーン表示とプロパティ操作
+
+- 044_extrude_geometry
+
+  ``THREE.ExtrudeGeometry``のシーン表示とプロパティ操作
+
+- 
 
 
 
