@@ -44,8 +44,7 @@ function init() {
             else {
                 func = klein;
             }
-            parametricMesh = createMesh(new THREE.ParametricGeometry(func, controls.slices, controls.stacks, true));
-
+            parametricMesh = createMesh(new THREE.ParametricGeometry(func, controls.slices, controls.stacks));
             scene.add(parametricMesh);
         });
     };
@@ -55,7 +54,7 @@ function init() {
     gui.add(controls, 'slices', 10, 200).step(5).onChange(controls.redraw);
     gui.add(controls, 'stacks', 10, 200).step(5).onChange(controls.redraw);
 
-    klein = ((u, v, target) => {
+    let klein = ((u, v, target) => {
         u *= Math.PI;
         v *= 2 * Math.PI;
 
@@ -75,7 +74,7 @@ function init() {
         // return new THREE.Vector3(x, y, z);
     });
 
-    radialWave = ((u, v, target) => {
+    let radialWave = ((u, v, target) => {
         const r = 50;
 
         const x = Math.sin(u) * r;
