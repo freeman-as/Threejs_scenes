@@ -41,8 +41,6 @@ function init() {
 
     document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
 
-    let step = 0;
-
     let text1;
     let text2;
 
