@@ -178,8 +178,24 @@
 
   ``THREE.ExtrudeGeometry``のシーン表示とプロパティ操作
 
+- 045_extrude_tube
+
+  ``THREE.TubeGeometry``のシーン表示とプロパティ操作
+
+- 046_extrude_svg
+
+  SVGソースをThree.js形式へ変換
+
+- 047_parametric_geometries
+
+  ``THREE.ParametricGeometry``のシーン表示とプロパティ操作
+
+- 048_text_geometry
+
+  ``THREE.TextGeometry``のシーン表示とプロパティ操作
+
+- 049_geometry_boolean_operation
+
+  ブーリアン演算を使ったメッシュの結合
+
 - 
-
-
-
-
