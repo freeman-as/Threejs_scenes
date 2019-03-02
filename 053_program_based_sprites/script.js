@@ -71,6 +71,7 @@ function init() {
 
     function createSprites() {
         const material = new THREE.SpriteCanvasMaterial({
+            // canvas2Dコンテキスト描画用の関数を指示する
             program: getTexture,
             color: 0xffffff
         });

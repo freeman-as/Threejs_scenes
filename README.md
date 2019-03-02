@@ -214,4 +214,12 @@
 
   `THREE.SpriteCanvasMaterial`でcanvas要素の出力をパーティクルのテクスチャに使用
 
+- 054_program_based_point_cloud_webgl
+
+  `THREE.Points`を使用した`THREE.WebGLRenderer`でcanvas要素をテクスチャに使用したパーティクル表現
+
+- 055_program_based_sprites_webgl
+
+  `THREE.Sprite`を使用した`THREE.WebGLRenderer`でcanvas要素をテクスチャに使用したパーティクル表現
+
 - 
