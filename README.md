@@ -198,4 +198,20 @@
 
   ブーリアン演算を使ったメッシュの結合
 
+- 050_sprite_particles
+
+  ``THREE.Sprite``によるパーティクル表現
+
+- 051_points_particles
+
+  ``THREE.Points``によるパーティクル表現
+
+- 052_basic_point_cloud
+
+  ``THREE.Points``によるパーティクル表現とプロパティ操作
+
+- 053_program_based_sprites
+
+  `THREE.SpriteCanvasMaterial`でcanvas要素の出力をパーティクルのテクスチャに使用
+
 - 
