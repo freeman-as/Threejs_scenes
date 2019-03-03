@@ -222,4 +222,13 @@
 
   `THREE.Sprite`を使用した`THREE.WebGLRenderer`でcanvas要素をテクスチャに使用したパーティクル表現
 
+- 056_rainy_scene
+
+  `THREE.TextureLoader`で読み込んだ外部画像をテクスチャに使用したパーティクル表現
+
+- 057_snowy_scene
+
+  `THREE.Sprite`を使用した`THREE.WebGLRenderer`でcanvas要素をテクスチャに使用したパーティクル表現
+
 - 
+
