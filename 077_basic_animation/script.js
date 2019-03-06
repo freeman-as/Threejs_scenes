@@ -57,12 +57,12 @@ function init() {
 
     const controls = new function() {
         this.rotationSpeed = 0.02;
-        this.boucingSpeed = 0.03;
+        this.bouncingSpeed = 0.03;
         this.scalingSpeed = 0.03;
     }
     const gui = new dat.GUI();
     gui.add(controls, 'rotationSpeed', 0, 0.5);
-    gui.add(controls, 'boucingSpeed', 0, 0.5);
+    gui.add(controls, 'bouncingSpeed', 0, 0.5);
     gui.add(controls, 'scalingSpeed', 0, 0.5);
 
     const renderScene = () => {
@@ -73,8 +73,8 @@ function init() {
         cube.rotation.z += controls.rotationSpeed;
 
         step += controls.bouncingSpeed;
-        sphere.position.x = 10 + (10 * (Math.cos(step)));
-        sphere.position.y = 2;
+        sphere.position.x = 20 + (10 * (Math.cos(step)));
+        sphere.position.y = 2 + (10 * Math.abs(Math.sin(step)));
 
         scalingStep += controls.scalingSpeed;
         const scaleX = Math.abs(Math.sin(scalingStep / 4));
